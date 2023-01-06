@@ -1,0 +1,26 @@
+/*
+*   VAIRABLES
+*/
+$fontSizes: 40,30,20,15;
+$colors:(
+    "blue":#28A9E0,
+    "darkBlue":#215398,
+    "lightBlue":#F1F6FC,
+    "black":#2D3236,
+    "grey":#808080,
+    "megenta":#FF3859,
+);
+
+$blue: #28A9E0;
+$darkBlue: #215398;
+$lightBlue: #F1F6FC;
+$black: #2D3236;
+$grey: #808080;
+$megenta: #FF3859;
+
+/*
+*   MIXINS
+*/
+@mixin fontSizeToRem($size) {
+    font-size: #{$size/15}rem;
+}

@@ -1,0 +1,89 @@
+@import "variables";
+
+html{
+    font-size: 15px !important;
+}
+
+body{
+    background-color: $lightBlue;
+    min-height: auto;
+    padding-bottom: 20px;
+}
+
+@import "fonts";
+
+.site-header{
+    background-color: #FFF;
+    padding: 23px 0;
+}
+.block{
+    &--homeHero{
+        background-color: $darkBlue;
+        padding: 50px 0;
+        color: #FFF;
+        .swiper-slide{
+            height: auto;
+        }
+        &--slider{
+            margin-top: 40px;
+            &--control{
+                &>div{
+                    width: 48px;
+                    height: 48px;
+                    position: relative;
+                    cursor: pointer;
+                    transition: .25s all;
+                    border-radius: 50%;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: calc(50% - 12px);
+                        left: calc(50% - 8px);
+                        width: 16px;
+                        height: 24px;
+                        background-image: url(../../images/arrow_slider.svg);
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    &.right{
+                        &::before{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &:hover{
+                        background: rgba(255, 255, 255, 0.05);
+                    }
+                }
+            }
+            &--single{
+                min-height: 228px;
+                margin:  0 13px;
+                padding: 36px 28px;
+                background-color: #FFF;
+                height: 100%;
+                color: $black;
+                text-align: center;
+                p{
+                    margin-top: 12px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    &--homeContent{
+        margin-top: 50px;
+        &__displayDotBefore{
+            
+        }
+        &--row{
+            padding: 0px 61px;
+        }
+        h2{
+            margin-top: 36px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@import "responsive";

@@ -1,0 +1,12 @@
+{
+    "name": "acf/home-content",
+    "title": "Home Content",
+    "description": "Section with content.",
+    "category": "customBlocks",
+    "icon": "admin-comments",
+    "keywords": ["Home", "Content"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "home-content.php"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/hero-slider",
+    "title": "Hero Slider",
+    "description": "Slider for Home hero section.",
+    "category": "customBlocks",
+    "icon": "admin-comments",
+    "keywords": ["Hero", "Slider"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "hero-slider.php"
+    }
+}
